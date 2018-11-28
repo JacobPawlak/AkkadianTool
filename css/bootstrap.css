@@ -9053,3 +9053,9 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #0069d9;
   height: 200px;
 }
+
+.result-content{
+  background-color: lightsteelblue;
+  height: 200px;
+  margin-bottom: 20px;
+}
