@@ -13,7 +13,17 @@ var Gleft_side = 0;
 var Gright_side = 0;
 var Gtop_side = 0;
 
-
+//loading in the akkadian.json file
+/* var akkjson = new File('../akkadian.json');
+var akkstr = '';
+akkjson.open('r');
+while (!akkjson.eof) {
+	// read each line of text
+	akkstr += akkjson.readln() + "\n";
+}
+akkjson.close();
+*/
+var Gakkdian = JSON.parse(akkadian);
 
 // -------------------- FUNCTIONS --------------------
 

@@ -1,24 +1,24 @@
 {
     "cuneiform_symbols":
-        {
-            "s1":
+        [
+            {"s1":
                 {
                     "image": "imgs/symbols/s1.jpg",
                     "name": "something",
                     "leftside": "1",
                     "rightside": "2",
                     "topside": "3"
-                }
-        },
+                }}
+        ],
 
     "leftparts":
-        {
-            "l1":
+        [
+            {"l1":
                 {
                     "id": "1",
                     "image": "imgs/leftparts/l1.jpg"
-                }
-        },
+                }}
+        ],
 
     "rightparts":
         {

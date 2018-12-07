@@ -17,10 +17,301 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
     <!-- bootstrap js file -->
-    <script src="js/bootstrap.js"></script>
+    <!-- <script src="js/bootstrap.js"></script> -->
     <!-- my (Jacob's) script here -->
-    <script src='js/akkadian.js'>
+    <script type="text/javascript" >
         
+        var akkadian = {
+
+            cuneiform_symbols : [
+                {"s1":
+                    {
+                        "image": "imgs/symbols/s1.png",
+                        "name": "something",
+                        "leftside": "1",
+                        "rightside": "2",
+                        "topside": "3"
+                    }
+                },
+                {"s2":
+                    {
+                        "image": "imgs/symbols/s2.png",
+                        "name": "something",
+                        "leftside": "1",
+                        "rightside": "2",
+                        "topside": "3"
+                    }
+                }
+            ],
+
+            left_parts : [
+                {"l1":
+                    {
+                        "id": "1",
+                        "image": "imgs/leftparts/left1.png"
+                    }
+                },
+                {"l2":
+                    {
+                        "id": "2",
+                        "image": "imgs/leftparts/left2.png"
+                    }
+                },
+                {"l3":
+                    {
+                        "id": "3",
+                        "image": "imgs/leftparts/left3.png"
+                    }
+                },
+                {"l4":
+                    {
+                        "id": "4",
+                        "image": "imgs/leftparts/left4.png"
+                    }
+                },
+                {"l5":
+                    {
+                        "id": "5",
+                        "image": "imgs/leftparts/left5.png"
+                    }
+                },
+                {"l6":
+                    {
+                        "id": "6",
+                        "image": "imgs/leftparts/left6.png"
+                    }
+                },
+                {"l7":
+                    {
+                        "id": "7",
+                        "image": "imgs/leftparts/left7.png"
+                    }
+                },
+                {"l8":
+                    {
+                        "id": "8",
+                        "image": "imgs/leftparts/left8.png"
+                    }
+                },
+                {"l9":
+                    {
+                        "id": "9",
+                        "image": "imgs/leftparts/left9.png"
+                    }
+                },
+                {"l10":
+                    {
+                        "id": "10",
+                        "image": "imgs/leftparts/left10.png"
+                    }
+                },
+                {"l11":
+                    {
+                        "id": "11",
+                        "image": "imgs/leftparts/left11.png"
+                    }
+                },
+                {"l12":
+                    {
+                        "id": "12",
+                        "image": "imgs/leftparts/left12.png"
+                    }
+                },
+                {"l13":
+                    {
+                        "id": "13",
+                        "image": "imgs/leftparts/left13.png"
+                    }
+                },
+                {"l14":
+                    {
+                        "id": "14",
+                        "image": "imgs/leftparts/left14.png"
+                    }
+                },
+                {"l15":
+                    {
+                        "id": "15",
+                        "image": "imgs/leftparts/left15.png"
+                    }
+                },
+                {"l16":
+                    {
+                        "id": "16",
+                        "image": "imgs/leftparts/left16.png"
+                    }
+                },
+                {"l17":
+                    {
+                        "id": "17",
+                        "image": "imgs/leftparts/left17.png"
+                    }
+                },
+                {"l18":
+                    {
+                        "id": "18",
+                        "image": "imgs/leftparts/left18.png"
+                    }
+                },
+                {"l19":
+                    {
+                        "id": "19",
+                        "image": "imgs/leftparts/left19.png"
+                    }
+                },
+                {"l20":
+                    {
+                        "id": "20",
+                        "image": "imgs/leftparts/left20.png"
+                    }
+                },
+                {"l21":
+                    {
+                        "id": "21",
+                        "image": "imgs/leftparts/left21.png"
+                    }
+                },
+                {"l22":
+                    {
+                        "id": "22",
+                        "image": "imgs/leftparts/left22.png"
+                    }
+                },
+                {"l23":
+                    {
+                        "id": "23",
+                        "image": "imgs/leftparts/left23.png"
+                    }
+                },
+                {"l24":
+                    {
+                        "id": "24",
+                        "image": "imgs/leftparts/left24.png"
+                    }
+                },
+                {"l25":
+                    {
+                        "id": "25",
+                        "image": "imgs/leftparts/left25.png"
+                    }
+                },
+                {"l26":
+                    {
+                        "id": "26",
+                        "image": "imgs/leftparts/left26.png"
+                    }
+                },
+                {"l27":
+                    {
+                        "id": "27",
+                        "image": "imgs/leftparts/left27.png"
+                    }
+                },
+                {"l28":
+                    {
+                        "id": "28",
+                        "image": "imgs/leftparts/left28.png"
+                    }
+                },
+                {"l29":
+                    {
+                        "id": "29",
+                        "image": "imgs/leftparts/left29.png"
+                    }
+                },
+                {"l30":
+                    {
+                        "id": "30",
+                        "image": "imgs/leftparts/left30.png"
+                    }
+                },
+                {"l31":
+                    {
+                        "id": "31",
+                        "image": "imgs/leftparts/left31.png"
+                    }
+                },
+                {"l32":
+                    {
+                        "id": "32",
+                        "image": "imgs/leftparts/left32.png"
+                    }
+                },
+                {"l33":
+                    {
+                        "id": "33",
+                        "image": "imgs/leftparts/left33.png"
+                    }
+                },
+                {"l34":
+                    {
+                        "id": "34",
+                        "image": "imgs/leftparts/left34.png"
+                    }
+                },
+                {"l35":
+                    {
+                        "id": "35",
+                        "image": "imgs/leftparts/left35.png"
+                    }
+                },
+                {"l36":
+                    {
+                        "id": "36",
+                        "image": "imgs/leftparts/left36.png"
+                    }
+                },
+                {"l37":
+                    {
+                        "id": "37",
+                        "image": "imgs/leftparts/left37.png"
+                    }
+                },
+                {"l38":
+                    {
+                        "id": "38",
+                        "image": "imgs/leftparts/left38.png"
+                    }
+                }
+            ]
+
+        };
+
+    </script>
+
+    <script type="text/javascript" >
+
+    //Akkadian Tools project
+    // -------------------- GLOBAL VARIABLES --------------------
+    console.log("hello, welcome to the Akkadian Cuneiform Finding Tool. you're kind of nosey aren't you");
+    var Gleft_side = 0;
+    var Gright_side = 0;
+    var Gtop_side = 0;
+
+    var left_table = document.getElementById("left-table");
+    var right_table = document.getElementById("right-table");
+    var top_table = document.getElementById("top-table");
+    var result_table = document.getElementById("result-table");
+
+    // -------------------- FUNCTIONS --------------------
+
+    function setLeftSide(left_val){
+        Gleft_side = left_val;
+    };
+
+    function setRightSide(right_val){
+        Gright_side = right_val;
+    };
+
+    function setTopSide(top_val){
+        Gtop_side = top_val;
+    };
+
+    for(x in akkadian.left_parts){console.log(akkadian.left_parts[x])}
+
+
+    // -------------------- COMMENTS AND JOKES --------------------
+    
     </script>
 
 </head>
@@ -47,6 +338,10 @@
 
         <div class="col-md-4 top-select">
 
+            <table id="top-table">
+
+            </table>
+
         </div>
 
         <div class="col-md-4"></div>
@@ -57,10 +352,67 @@
         <!-- Render the left part contents -->
         <div class="col-md-4 left-select">
 
+            <table id="left-table">
+                <tr id="row1">
+                    <td id="1"></td>
+                    <td id="2"></td>
+                    <td id="3"></td>
+                    <td id="4"></td>
+                    <td id="5"></td>
+                    <td id="6"></td>
+                    <td id="7"></td>
+                    <td id="8"></td>
+                </tr>
+                <tr id="row2">
+                    <td id="9"></td>
+                    <td id="10"></td>
+                    <td id="11"></td>
+                    <td id="12"></td>
+                    <td id="13"></td>
+                    <td id="14"></td>
+                    <td id="15"></td>
+                    <td id="16"></td>    
+                </tr>
+                <tr id="row3">
+                    <td id="17"></td>
+                    <td id="18"></td>
+                    <td id="19"></td>
+                    <td id="20"></td>
+                    <td id="21"></td>
+                    <td id="22"></td>
+                    <td id="23"></td>
+                    <td id="24"></td>
+                </tr>
+                <tr id="row4">
+                    <td id="25"></td>
+                    <td id="26"></td>
+                    <td id="27"></td>
+                    <td id="28"></td>
+                    <td id="29"></td>
+                    <td id="30"></td>
+                    <td id="31"></td>
+                    <td id="32"></td>
+                </tr>
+                <tr id="row5">
+                    <td id="33"></td>
+                    <td id="34"></td>
+                    <td id="35"></td>
+                    <td id="36"></td>
+                    <td id="37"></td>
+                    <td id="38"></td>
+                    <td id="39"></td>
+                    <td id="40"></td>
+                </tr>
+            </table>
+
         </div>
         <div class="col-md-2"></div>
         <!-- Render the right part contents -->
         <div class="col-md-4 right-select">
+
+            <table id="right-table">
+
+            </table>
 
         </div>
 
@@ -72,6 +424,21 @@
         <div class="col-md-1"></div>
 
         <div class="col-md-10 result-content">
+
+            <table id="result-table">
+                <tr id="result-row1">
+                    <td id="41"></td>
+                    <td id="42"></td>
+                    <td id="43"></td>
+                    <td id="44"></td>
+                    <td id="45"></td>
+                    <td id="46"></td>
+                    <td id="47"></td>
+                    <td id="48"></td>
+                    <td id="49"></td>
+                    <td id="50"></td>
+                </tr>
+            </table>
             
         </div>
 
