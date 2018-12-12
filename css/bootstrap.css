@@ -9047,6 +9047,7 @@ a.text-dark:hover, a.text-dark:focus {
 .left-select{
   background-color: #0062cc;
   height: auto;
+  width: auto;
 }
 
 .right-select{
@@ -9063,4 +9064,9 @@ a.text-dark:hover, a.text-dark:focus {
 .cuneiform-img{
   width: 30px;
   height: 50px;
+}
+
+.cuneiform-result{
+  width: 50px;
+  height: 30px;
 }
