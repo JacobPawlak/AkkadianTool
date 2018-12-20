@@ -21,8 +21,10 @@
     <!-- my (Jacob's) script here -->
     <script type="text/javascript" >
         
+        //the full Akkadian JSON object
         var akkadian = {
 
+            //the sub-json obj of whole symbols, each symbol has an image loc, a left id, right id, and top id
             cuneiform_symbols : [
                 {"f1":
                     {
@@ -245,6 +247,8 @@
 
             ],
 
+            //the sub-json obj of left-hand-side symbols, (if you cut the image so that just a leftmost id is visable):
+            // each symbol has an ID that is used in the Full Symbol 'leftside' id, and an image loc
             left_parts : [
                 {"l1":
                     {
@@ -503,7 +507,8 @@
         <div class="col-md-4"></div>
 
         <div class="col-md-4 top-select">
-
+            <!-- this is the table that will be filled with topparts in window.onload -->
+            <!-- DO NOT PUT ANYTHING IN HERE -->
             <table id="top-table">
 
             </table>
@@ -517,6 +522,8 @@
         <div class="col-md-1"></div>
         <!-- Render the left part contents -->
         <div class="col-md-4 left-select">
+            <!-- this is the table that will be filled with leftparts in window.onload -->
+            <!-- DO NOT PUT ANYTHING IN HERE -->
             <table id="left-table">
 
             </table>
@@ -525,7 +532,8 @@
         <div class="col-md-2"></div>
         <!-- Render the right part contents -->
         <div class="col-md-4 right-select">
-
+            <!-- this is the table that will be filled with rightparts in window.onload -->
+            <!-- DO NOT PUT ANYTHING IN HERE -->
             <table id="right-table">
 
             </table>
@@ -539,7 +547,9 @@
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
+            <!-- on this button click, run the getResultsList function -->
             <button class="btn btn-info" onclick="getResultList()">Find me some Cuneiform</button>
+            <!-- a board reset button, just to clear the screen of borders and results. -->
             <button class="btn btn-info" onclick="resetBoard()">Reset the board</button>
         </div>
 
@@ -552,6 +562,9 @@
 
         <div class="col-md-10 result-content">
 
+            <!-- this is the table that will be filled with the results of the search when the 
+                getResultList function is called -->
+            <!-- Seriously DO NOT PUT ANYTHING IN HERE -->
             <table id="result-table">
                 
             </table>
@@ -566,28 +579,44 @@
         //Akkadian Tools project
         // -------------------- GLOBAL VARIABLES --------------------
         console.log("hello, welcome to the Akkadian Cuneiform Finding Tool. you're kind of nosey aren't you");
+        //set vars for the top, left, and right side selections (set to zero, will be over-written when part is selected)
         var Gleft_side = 0;
         var Gright_side = 0;
         var Gtop_side = 0;
     
         // -------------------- FUNCTIONS --------------------
     
+        //function to set the global Var Gleft_side
+        //given: left_val from HTML element that called the function (see window.onload function)
         function setLeftSide(left_val){
+            //simply set the Gleft_side val
             Gleft_side = left_val;
             console.log("left side pick is " + left_val);
+            //make the border of the HTML element red so you know youve already picked it
             event.target.setAttribute("style", "border-color: red");
         };
     
+        //function to set the global Var Gright_side
+        //given: right_val from HTML element that called the function (see window.onload function)
         function setRightSide(right_val){
+            //same as above
             Gright_side = right_val;
             console.log("right side pick is" + right_val);
+            //make the border of the HTML element red so you know youve already picked it
+            event.target.setAttribute("style", "border-color: red");
         };
     
+        //function to set the global Var Gtop_side
+        //given: top_val from HTML element that called the function (see window.onload function)
         function setTopSide(top_val){
+            //same as left and right side
             Gtop_side = top_val;
             console.log("top side pick is " + top_val);
+            //make the border of the HTML element red so you know youve already picked it
+            event.target.setAttribute("style", "border-color: red");
         };
     
+        //this is the function 
         window.onload = function setUp(){
 
             //console.log(akkadian.left_parts[0].l1.image)
@@ -617,10 +646,6 @@
                         li_index += 1;
                     }
                 }
-            }
-
-            for(i = 0; i < left_images.length; i++){
-
             }
 
         };
