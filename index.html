@@ -616,12 +616,17 @@
             event.target.setAttribute("style", "border-color: red");
         };
     
-        //this is the function 
+        //this is the function to load the board so to say, if you imagine all of the
+        // images as cards on a table, and you select the cards by clicking on them, this
+        // sets all the cards on the table. 
         window.onload = function setUp(){
 
             //console.log(akkadian.left_parts[0].l1.image)
+            //left_images is a list of the image.png files for the left parts folder
             var left_images = [];
+            //scanning the akkadian json left_parts object, grabbing each 'x' object
             for(x in akkadian.left_parts){
+                //making a 
                 var leftobj = Object.keys(akkadian.left_parts[x]);
                 var leftobj0 = leftobj[0];
                 var currleft = akkadian.left_parts[x][leftobj0];
